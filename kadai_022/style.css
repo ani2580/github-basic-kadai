@@ -25,7 +25,7 @@ main {
 
 #parent {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -81,7 +81,7 @@ footer a:hover {
   color: rgb(245, 178, 168);
 }
 
-media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
   #parent {
     flex-direction: column;
     align-items: center;
@@ -91,7 +91,7 @@ media screen and(max-width: 768px) {
     font-size: 30px;
   }
 
-   .contents p(2)::first-letter {
-    font-size: 25px;
+   .contents p:nth-of-type(2)::first-letter{
+    font-size: 25px; 
   }
 }
